@@ -3,7 +3,7 @@ let app         = express();
 let bodyParser  = require( "body-parser" );
 let mongoose    = require ("mongoose");
 
-mongoose.connect( "mongodb://localhost/star_camp" );
+mongoose.connect( "mongodb://localhost:27017/star_camp", {useNewUrlParser: true} );
 app.use(bodyParser.urlencoded({extended: true}));
 app.set( "view engine", "ejs" );
 
@@ -13,72 +13,48 @@ let campgroundSchema = new mongoose.Schema({
     image: String
     });
 
-let Campgounrd = mongoose.model( "Campground", campgroundSchema );
-
-Campgounrd.create(
-    {
-        name: "Lake Del Valle",
-        image: "https://assets3.roadtrippers.com/uploads/poi_gallery_image/image/362476307/-quality_60_-interlace_Plane_-resize_1024x480_U__-gravity_center_-extent_1024x480/place_image-image-1ca09651-17c8-45d0-87a7-884177213b93.jpg"
-    }, function ( err, campground ) {
-        if(err){
-            console.log(err);
-        }else {
-            console.log("Newly created campground");
-            console.log(campground)
-        }
-    });
-
-Campgounrd.create(
-    {
-        name: "Brushy Peak",
-        image: "http://www.redwoodhikes.com/MtDiablo/BrushyPeak1.jpg"
-    }, function ( err, campground ) {
-        if(err){
-            console.log(err);
-        }else {
-            console.log("Newly created campground");
-            console.log(campground)
-        }
-    });
-
-let campgrounds = [
-
-
-    {name: "Lake Del Valle", image: "https://assets3.roadtrippers.com/uploads/poi_gallery_image/image/362476307/-quality_60_-interlace_Plane_-resize_1024x480_U__-gravity_center_-extent_1024x480/place_image-image-1ca09651-17c8-45d0-87a7-884177213b93.jpg"},
-    {name: "Sycamore Grove", image: "https://www.cleanwaterprogram.org/images/stories/sycamore-bridge-sm.jpg"},
-    {name: "Brushy Peak", image: "http://www.redwoodhikes.com/MtDiablo/BrushyPeak1.jpg"},
-    {name: "Lake Del Valle", image: "https://assets3.roadtrippers.com/uploads/poi_gallery_image/image/362476307/-quality_60_-interlace_Plane_-resize_1024x480_U__-gravity_center_-extent_1024x480/place_image-image-1ca09651-17c8-45d0-87a7-884177213b93.jpg"},
-    {name: "Sycamore Grove", image: "https://www.cleanwaterprogram.org/images/stories/sycamore-bridge-sm.jpg"},
-    {name: "Brushy Peak", image: "http://www.redwoodhikes.com/MtDiablo/BrushyPeak1.jpg"},
-    {name: "Lake Del Valle", image: "https://assets3.roadtrippers.com/uploads/poi_gallery_image/image/362476307/-quality_60_-interlace_Plane_-resize_1024x480_U__-gravity_center_-extent_1024x480/place_image-image-1ca09651-17c8-45d0-87a7-884177213b93.jpg"},
-    {name: "Sycamore Grove", image: "https://www.cleanwaterprogram.org/images/stories/sycamore-bridge-sm.jpg"},
-    {name: "Brushy Peak", image: "http://www.redwoodhikes.com/MtDiablo/BrushyPeak1.jpg"},
-];
-
-
+let Campground = mongoose.model( "Campground", campgroundSchema );
 
 app.get( "/", function ( req, res ) {
     res.render("landing");
 } );
 
+//INDEX route
 app.get( "/campgrounds", function ( req, res ) {
-    res.render( "campgrounds", {campgrounds: campgrounds} );
+    Campground.find({}, function ( err, allCampgrounds ) {
+        if(err) {
+            console.log(err);
+        } else {
+            res.render( "campgrounds", {campgrounds: allCampgrounds} );
+        }
+    });
 } );
 
+//NEW route
 app.get( "/campgrounds/new",function (req, res) {
     res.render( "new" );
 } );
 
 
+// CREATE route
 app.post( "/campgrounds", function ( req, res ) {
     //get data from form & add to campgrounds array
     let name = req.body.name;
     let image = req.body.image;
     let newCampground = {name: name, image: image};
-    campgrounds.push( newCampground );
-    //redirect to campground page
-    res.redirect( "/campgrounds" );
+    //create a new campground & save to DB
+    Campgounrd.create(newCampground, function ( err, newlyCampground ) {
+        if(err){
+            console.log(err);
+        }else {
+            res.redirect("/campgrounds");
+        }
+    });
 } );
+
+app.get("/campgrounds/:id", function ( req, res ) {
+    res.send("This will be the show page one day!")
+});
 
 app.listen(3000, process.env.IP, function (  ) {
     console.log("star-camp has started!")
