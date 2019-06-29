@@ -71,7 +71,12 @@ app.post( "/campgrounds", function ( req, res ) {
 
 //Show template
 app.get("/campgrounds/:id", function ( req, res ) {
-    res.render("show");
+    Campground.findById(req.params.id, function ( err, foundCampground ) {
+        if(err){
+            console.log(err);
+        }else {
+            res.render("show", {campgound: foundCampground});
+        }
 });
 
 app.listen(3000, process.env.IP, function (  ) {
