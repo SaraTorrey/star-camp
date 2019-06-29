@@ -10,10 +10,27 @@ app.set( "view engine", "ejs" );
 //Schema setup
 let campgroundSchema = new mongoose.Schema({
     name: String,
-    image: String
+    image: String,
+    description: String,
     });
 
 let Campground = mongoose.model( "Campground", campgroundSchema );
+
+// Campground.create(
+//     {
+//         name: "Livermore",
+//         image: "https://lh6.googleusercontent.com/-EPrizzpTnkQ/XPL6OhurXoI/AAAAAAAANWM/oduFblpubfEjMbWUxLOR04pU-EGsCck_wCLIBGAYYCw/w100-h134-n-k-no/",
+//         description: "This is a great campground, no bathroom, just pretty.",
+//     },
+//     function f(err, campground  ) {
+//        if(err){
+//            console.log(err);
+//        } else {
+//            console.log("Newly created campground");
+//            console.log(campground);
+//        }
+//     });
+
 
 app.get( "/", function ( req, res ) {
     res.render("landing");
@@ -25,7 +42,7 @@ app.get( "/campgrounds", function ( req, res ) {
         if(err) {
             console.log(err);
         } else {
-            res.render( "campgrounds", {campgrounds: allCampgrounds} );
+            res.render( "index", {campgrounds: allCampgrounds} );
         }
     });
 } );
@@ -43,7 +60,7 @@ app.post( "/campgrounds", function ( req, res ) {
     let image = req.body.image;
     let newCampground = {name: name, image: image};
     //create a new campground & save to DB
-    Campgounrd.create(newCampground, function ( err, newlyCampground ) {
+    Campground.create(newCampground, function ( err, newlyCampground ) {
         if(err){
             console.log(err);
         }else {
@@ -52,8 +69,9 @@ app.post( "/campgrounds", function ( req, res ) {
     });
 } );
 
+//Show template
 app.get("/campgrounds/:id", function ( req, res ) {
-    res.send("This will be the show page one day!")
+    res.render("show");
 });
 
 app.listen(3000, process.env.IP, function (  ) {
