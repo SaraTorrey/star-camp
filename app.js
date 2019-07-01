@@ -52,12 +52,13 @@ app.get( "/campgrounds/new", function ( req, res ) {
     res.render( "new" );
 } );
 
-// CREATE route
+// CREATE route - is a POST route
 app.post( "/campgrounds", function ( req, res ) {
     //get data from form & add to campgrounds array
     let name = req.body.name;
     let image = req.body.image;
-    let newCampground = {name: name, image: image};
+    let desc = req.body.description;
+    let newCampground = {name: name, image: image, description: desc};
     //create a new campground & save to DB
     Campground.create( newCampground, function ( err, newlyCampground ) {
         if ( err ) {
@@ -76,7 +77,7 @@ app.get( "/campgrounds/:id", function ( req, res ) {
             console.log( err );
         }
         else {
-            res.render( "show", {campgound: foundCampground} );
+            res.render( "show", {campground: foundCampground} );
         }
     } );
 } );
