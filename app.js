@@ -1,20 +1,18 @@
-let express = require( "express" );
-let app = express();
-let bodyParser = require( "body-parser" );
-let mongoose = require( "mongoose" );
+let  express = require( "express" );
+     app = express();
+     bodyParser = require( "body-parser" );
+     mongoose = require( "mongoose" );
+     Campground = require ("./models/campground");
+     Comment = require ("./models/comment");
+     seedDB = require ("./seeds");
 
+
+seedDB();
 mongoose.connect( "mongodb://localhost:27017/star_camp", {useNewUrlParser: true} );
 app.use( bodyParser.urlencoded( {extended: true} ) );
 app.set( "view engine", "ejs" );
 
 //Schema setup
-let campgroundSchema = new mongoose.Schema( {
-                                                name: String,
-                                                image: String,
-                                                description: String,
-                                            } );
-
-let Campground = mongoose.model( "Campground", campgroundSchema );
 
 // Campground.create(
 //     {
@@ -30,12 +28,12 @@ let Campground = mongoose.model( "Campground", campgroundSchema );
 //            console.log(campground);
 //        }
 //     });
-
+//
 app.get( "/", function ( req, res ) {
     res.render( "landing" );
 } );
-
-//INDEX route
+//
+// //INDEX route
 app.get( "/campgrounds", function ( req, res ) {
     Campground.find( {}, function ( err, allCampgrounds ) {
         if ( err ) {
@@ -47,7 +45,7 @@ app.get( "/campgrounds", function ( req, res ) {
     } );
 } );
 
-//NEW route
+// //NEW route
 app.get( "/campgrounds/new", function ( req, res ) {
     res.render( "new" );
 } );
