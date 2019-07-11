@@ -7,32 +7,16 @@ let  express = require( "express" );
      seedDB = require ("./seeds");
 
 
-seedDB();
+
 mongoose.connect( "mongodb://localhost:27017/star_camp", {useNewUrlParser: true} );
 app.use( bodyParser.urlencoded( {extended: true} ) );
 app.set( "view engine", "ejs" );
+seedDB();
 
-//Schema setup
-
-// Campground.create(
-//     {
-//         name: "Livermore",
-//         image: "https://lh6.googleusercontent.com/-EPrizzpTnkQ/XPL6OhurXoI/AAAAAAAANWM/oduFblpubfEjMbWUxLOR04pU-EGsCck_wCLIBGAYYCw/w100-h134-n-k-no/",
-//         description: "This is a great campground, no bathroom, just pretty.",
-//     },
-//     function f(err, campground  ) {
-//        if(err){
-//            console.log(err);
-//        } else {
-//            console.log("Newly created campground");
-//            console.log(campground);
-//        }
-//     });
-//
 app.get( "/", function ( req, res ) {
     res.render( "landing" );
 } );
-//
+
 // //INDEX route
 app.get( "/campgrounds", function ( req, res ) {
     Campground.find( {}, function ( err, allCampgrounds ) {
@@ -40,14 +24,14 @@ app.get( "/campgrounds", function ( req, res ) {
             console.log( err );
         }
         else {
-            res.render( "index", {campgrounds: allCampgrounds} );
+            res.render( "campgrounds/index", {campgrounds: allCampgrounds} );
         }
     } );
 } );
 
-// //NEW route
+//NEW route
 app.get( "/campgrounds/new", function ( req, res ) {
-    res.render( "new" );
+    res.render( "campgrounds/new" );
 } );
 
 // CREATE route - is a POST route
@@ -70,15 +54,30 @@ app.post( "/campgrounds", function ( req, res ) {
 
 //Show template
 app.get( "/campgrounds/:id", function ( req, res ) {
-    Campground.findById( req.params.id, function ( err, foundCampground ) {
-        if ( err ) {
-            console.log( err );
+    Campground.findById(req.params.id).populate("comments").exec(function (err, foundCampground) {
+        if (err) {
+            console.log(err);
+        } else {
+            console.log("Found campground");
+            res.render("campgrounds/show", {campground: foundCampground});
         }
-        else {
-            res.render( "show", {campground: foundCampground} );
+    });
+});
+
+//***********************
+// Comments Routs
+//***********************
+
+app.get("/campgrounds/:id/comments/new", function (req, res) {
+
+    Campground.findById(req.params.id, function (err, campground) {
+        if(err){
+            console.log(err);
+        } else {
+            res.render("comments/new", {campground: campground});
         }
-    } );
-} );
+    });
+});
 
 app.listen( 3000, process.env.IP, function () {
     console.log( "star-camp has started!" );

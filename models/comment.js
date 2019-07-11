@@ -1,9 +1,8 @@
-let mongoose = require ("mongoose");
+let mongoose = require("mongoose");
 
-let commentSchema = mongoose.Schema ({
+let commentSchema = new mongoose.Schema({
     text: String,
     author: String
 });
 
-
-module.exports = mongoose.model("comment", commentSchema);
+module.exports = mongoose.model("Comment", commentSchema);
