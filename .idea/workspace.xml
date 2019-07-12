@@ -2,235 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e8fe6c3-4323-4a67-977c-ec576a6534d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/views/campgrounds/show.ejs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/comments/new.ejs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/campground.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/campground.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/comment.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/all.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/allLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/allSeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/any.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/anyLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/anySeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/apply.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/apply.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/applyEach.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/applyEach.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/applyEachSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/applyEachSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/asyncify.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/asyncify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/auto.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/auto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/autoInject.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/autoInject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/cargo.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/cargo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/compose.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/compose.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/concat.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/concat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/concatLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/concatSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/concatSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/constant.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/constant.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/detect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/detect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/detectLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/detectLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/detectSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/detectSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/dir.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dir.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/dist/async.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/dist/async.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/doDuring.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/doDuring.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/doUntil.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/doUntil.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/doWhilst.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/doWhilst.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/during.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/during.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/each.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/each.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/eachLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/eachLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/eachOf.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/eachOf.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/eachOfLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/eachOfLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/eachOfSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/eachOfSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/eachSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/eachSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/ensureAsync.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/ensureAsync.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/every.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/every.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/everyLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/everyLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/everySeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/everySeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/find.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/findLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/findSeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/foldl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/foldr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forEachLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forEachOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forEachOfLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forEachOfSeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forEachSeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/forever.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/forever.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/groupBy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/groupByLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/groupBySeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/inject.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/DoublyLinkedList.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/DoublyLinkedList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/applyEach.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/applyEach.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/consoleFunc.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/consoleFunc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/createTester.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/createTester.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/doParallel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/doParallel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/doParallelLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/doParallelLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/eachOfLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/eachOfLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/filter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/initialParams.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/initialParams.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/parallel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/parallel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/queue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/setImmediate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/internal/setImmediate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/internal/wrapAsync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/log.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/log.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/map.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/map.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/mapLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/mapLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/mapSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/mapSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/mapValues.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/mapValues.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/mapValuesLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/mapValuesLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/mapValuesSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/mapValuesSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/memoize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/memoize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/nextTick.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/nextTick.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/parallel.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/parallel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/parallelLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/parallelLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/priorityQueue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/priorityQueue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/queue.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/queue.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/race.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/race.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/reduce.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/reduce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/reduceRight.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/reduceRight.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/reflect.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/reflect.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/reflectAll.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/reflectAll.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/reject.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/reject.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/rejectLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/rejectLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/rejectSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/rejectSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/retry.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/retry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/retryable.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/retryable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/select.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/selectLimit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/selectSeries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/seq.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/seq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/series.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/series.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/setImmediate.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/setImmediate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/some.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/some.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/someLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/someLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/someSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/someSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/sortBy.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/sortBy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/timeout.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/timeout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/times.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/times.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/timesLimit.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/timesLimit.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/timesSeries.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/timesSeries.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/transform.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/transform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/tryEach.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/unmemoize.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/unmemoize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/until.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/until.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/waterfall.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/waterfall.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/whilst.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/async/whilst.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/async/wrapSync.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.core.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/browser/bluebird.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/debuggability.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/release/debuggability.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/release/promise.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/js/release/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/js/release/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/bluebird/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/bluebird/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/test/examples.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/test/examples.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/test/misc.test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/test/post.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/test/post.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/kareem/test/pre.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/kareem/test/pre.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_baseClone.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_baseClone.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_baseMerge.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_baseMerge.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_createRound.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_createRound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/_safeGet.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/_safeGet.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/core.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/core.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/debounce.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/debounce.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/lodash.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/lodash.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/lodash.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/lodash.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/lodash/template.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/lodash/template.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/license.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/readme.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/lib/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/lib/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mpath/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mpath/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/.eslintignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/History.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/History.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/collection/collection.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/collection/collection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/collection/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/collection/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/collection/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/collection/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/mquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/mquery.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/permissions.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/permissions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/lib/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/lib/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.eslintrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/CHANGELOG.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/Makefile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/browser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/debug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/node_modules/debug/src/node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/test/collection/node.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/test/collection/node.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/test/env.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/test/env.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/mquery/test/utils.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/mquery/test/utils.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/.travis.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/regexp-clone/test/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/regexp-clone/test/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/.babelrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/.coveralls.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/MIT-LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/changelog.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/coverage/coverage.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/coverage/lcov.info" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/gulpfile.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/index.d.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/lib/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/sift.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/src/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/test/basic-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/test/immutable-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/test/objects-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/test/operations-test.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/webpack.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sift/yarn.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/sliced/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/sliced/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/seeds.js" beforeDir="false" afterPath="$PROJECT_DIR$/seeds.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/index.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/index.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/new.ejs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/show.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/campgrounds/show.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/campgrounds/show.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/comments/new.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/comments/new.ejs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/partials/header.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/partials/header.ejs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -240,77 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="70" column="59" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/layer.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="218">
-              <caret line="101" column="44" lean-forward="true" selection-start-line="101" selection-start-column="44" selection-end-line="101" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/comments/new.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-              <folding>
-                <element signature="e#180#218#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node_modules/express/lib/router/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="274" column="9" selection-start-line="274" selection-start-column="9" selection-end-line="274" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/campgrounds/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/campgrounds/show.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/campgrounds/new.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="23" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/partials/footer.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="2" selection-end-column="7" />
+            <state relative-caret-position="330">
+              <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -318,8 +29,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+            <state relative-caret-position="135">
+              <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/views/campgrounds/show.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -327,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/seeds.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+            <state relative-caret-position="200">
+              <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -357,7 +77,6 @@
         <option value="$PROJECT_DIR$/v1/views/campgrounds.ejs" />
         <option value="$PROJECT_DIR$/v1/views/landing.ejs" />
         <option value="$PROJECT_DIR$/views/campgrounds.ejs" />
-        <option value="$PROJECT_DIR$/views/partials/header.ejs" />
         <option value="$PROJECT_DIR$/views/partials/footer.ejs" />
         <option value="$PROJECT_DIR$/cats.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
@@ -365,11 +84,14 @@
         <option value="$PROJECT_DIR$/views/show.ejs" />
         <option value="$PROJECT_DIR$/models/comment.js" />
         <option value="$PROJECT_DIR$/models/campground.js" />
-        <option value="$PROJECT_DIR$/seeds.js" />
         <option value="$PROJECT_DIR$/views/campgrounds/index.ejs" />
         <option value="$PROJECT_DIR$/views/campgrounds/new.ejs" />
         <option value="$PROJECT_DIR$/views/comments/new.ejs" />
+        <option value="$PROJECT_DIR$/seeds.js" />
+        <option value="$PROJECT_DIR$/public/stylesheets/main.css" />
         <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/views/partials/header.ejs" />
+        <option value="$PROJECT_DIR$/views/campgrounds/show.ejs" />
       </list>
     </option>
   </component>
@@ -417,6 +139,12 @@
               <item name="star-camp" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="comments" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="star-camp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="star-camp" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="partials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -544,7 +272,7 @@
       <workItem from="1562012798110" duration="130000" />
       <workItem from="1562600363129" duration="239000" />
       <workItem from="1562700338126" duration="6880000" />
-      <workItem from="1562777519115" duration="3047000" />
+      <workItem from="1562777519115" duration="8248000" />
     </task>
     <task id="LOCAL-00001" summary="Add views directories and its files and app.js">
       <created>1561059540159</created>
@@ -637,11 +365,18 @@
       <option name="project" value="LOCAL" />
       <updated>1562724884656</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Create new comments route and form">
+      <created>1562811927987</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1562811927988</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41194000" />
+    <option name="totallyTimeSpent" value="46395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -654,6 +389,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="720" y="23" width="720" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2532189" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -672,7 +408,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.5363057" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.17070064" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -702,19 +438,8 @@
     <MESSAGE value="Fix syntax error" />
     <MESSAGE value="Install ejs to show.ejs &#10;Add description to campground form" />
     <MESSAGE value="Create seeds.js &#10;Create comment.js" />
-    <option name="LAST_COMMIT_MESSAGE" value="Create seeds.js &#10;Create comment.js" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/seeds.js</url>
-          <line>45</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Create new comments route and form" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create new comments route and form" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/README.md">
@@ -758,55 +483,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/seeds.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="46" column="50" lean-forward="true" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/campgrounds/show.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/partials/footer.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/campgrounds/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/campgrounds/new.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="23" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/comments/new.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="40" lean-forward="true" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#180#218#0#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -824,10 +504,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/views/campgrounds/new.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8">
+          <caret line="4" column="60" lean-forward="true" selection-start-line="4" selection-start-column="60" selection-end-line="4" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/comments/new.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="65" lean-forward="true" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <element signature="e#180#218#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/campgrounds/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="14" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/seeds.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="46" column="50" selection-start-line="46" selection-start-column="50" selection-end-line="46" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="70" column="59" selection-start-line="70" selection-start-column="59" selection-end-line="70" selection-end-column="59" />
+        <state relative-caret-position="330">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/partials/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="43" lean-forward="true" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/stylesheets/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/campgrounds/show.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="41" selection-start-line="13" selection-start-column="41" selection-end-line="13" selection-end-column="41" />
         </state>
       </provider>
     </entry>
