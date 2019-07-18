@@ -1,18 +1,18 @@
-let express     = require("express"),
-    app         = express(),
-    bodyParser  = require("body-parser"),
-    mongoose    = require("mongoose"),
-    passport    = require("passport"),
+let express = require("express"),
+    app = express(),
+    bodyParser = require("body-parser"),
+    mongoose = require("mongoose"),
+    passport = require("passport"),
     LocalStrategy = require("passport-local"),
-    Campground  = require("./models/campground"),
-    Comment     = require("./models/comment"),
-    User        = require("./models/user"),
-    seedDB      = require("./seeds")
+    Campground = require("./models/campground"),
+    Comment = require("./models/comment"),
+    User = require("./models/user"),
+    seedDB = require("./seeds");
 
 //requring routes
 let commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
-    indexRoutes      = require("./routes/index")
+    indexRoutes      = require("./routes/index");
 
 mongoose.connect("mongodb://localhost/yelp_camp_v8");
 app.use(bodyParser.urlencoded({extended: true}));
@@ -22,7 +22,7 @@ app.use(express.static(__dirname + "/public"));
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
-    secret: "Once again Rusty wins cutest dog!",
+    secret: "Houston is humid.",
     resave: false,
     saveUninitialized: false
 }));
