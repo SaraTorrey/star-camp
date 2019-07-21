@@ -1,28 +1,30 @@
-let express = require("express"),
-    app = express(),
-    bodyParser = require("body-parser"),
-    mongoose = require("mongoose"),
-    passport = require("passport"),
+let express     = require("express"),
+    app         = express(),
+    bodyParser  = require("body-parser"),
+    mongoose    = require("mongoose"),
+    passport    = require("passport"),
     LocalStrategy = require("passport-local"),
-    Campground = require("./models/campground"),
-    Comment = require("./models/comment"),
-    User = require("./models/user"),
-    seedDB = require("./seeds");
+    methodOverride = require("method-override"),
+    Campground  = require("./models/campground"),
+    Comment     = require("./models/comment"),
+    User        = require("./models/user"),
+    seedDB      = require("./seeds");
 
-//requring routes
+//requiring routes
 let commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/yelp_camp_v8");
+mongoose.connect("mongodb://localhost/star_camp");
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
+app.use(methodOverride("_method"));
 // seedDB(); //seed the database
 
 // PASSPORT CONFIGURATION
 app.use(require("express-session")({
-    secret: "Houston is humid.",
+    secret: "Houston is hot and humid!",
     resave: false,
     saveUninitialized: false
 }));
@@ -40,6 +42,7 @@ app.use(function(req, res, next){
 app.use("/", indexRoutes);
 app.use("/campgrounds", campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
+
 app.listen( 3000, process.env.IP, function () {
     console.log( "star-camp has started!" );
 } );
