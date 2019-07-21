@@ -1,7 +1,8 @@
 let express = require("express"),
     router = express.Router(),
     passport = require("passport"),
-    User = require("../models/user");
+    User = require("../models/user"),
+    middleware = require("../middleware");
 
 //root route
 router.get("/", function (req, res) {
