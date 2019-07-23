@@ -1,22 +1,31 @@
-let express         = require("express"),
-    app             = express(),
-    bodyParser      = require("body-parser"),
-    mongoose        = require("mongoose"),
-    flash           = require("connect-flash"),
-    passport        = require("passport"),
-    LocalStrategy   = require("passport-local"),
-    methodOverride  = require("method-override"),
-    Campground      = require("./models/campground"),
-    Comment         = require("./models/comment"),
-    User            = require("./models/user"),
-    seedDB          = require("./seeds");
+const   express         = require("express"),
+        app             = express(),
+        bodyParser      = require("body-parser"),
+        mongoose        = require("mongoose"),
+        flash           = require("connect-flash"),
+        passport        = require("passport"),
+        LocalStrategy   = require("passport-local"),
+        methodOverride  = require("method-override"),
+        Campground      = require("./models/campground"),
+        Comment         = require("./models/comment"),
+        User            = require("./models/user"),
+        seedDB          = require("./seeds");
 
 //requiring routes
-let commentRoutes    = require("./routes/comments"),
-    campgroundRoutes = require("./routes/campgrounds"),
-    indexRoutes      = require("./routes/index");
+const   commentRoutes    = require("./routes/comments"),
+        campgroundRoutes = require("./routes/campgrounds"),
+        indexRoutes      = require("./routes/index");
 
-mongoose.connect("mongodb://localhost/star_camp");
+// mongoose.connect("mongodb://localhost/star_camp");
+    mongoose.connect("mongodb+srv://SaraTorrey:6vNUzjirKaFH6AF@cluster0-msqbt.mongodb.net/test?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+}). then (() => {
+    console.log("Connected to DB!");
+}).catch(err =>{
+    console.log("Error",err.message);
+});
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
